@@ -29,13 +29,9 @@ const CoreValuesSection = () => {
   return (
     <section className="bg-slate-50 py-24 sm:py-32 overflow-hidden">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* ไอคอนตกแต่งที่วางตำแหน่งแบบ absolute */}
-        <div className="absolute top-0 -right-4 hidden lg:block">
-          <CrownIcon />
-        </div>
-        <div className="absolute bottom-12 -right-8 hidden lg:block">
-           <SmileyIcon />
-        </div>
+        {/* ไอคอนตกแต่ง */}
+        <div className="absolute top-0 -right-4 hidden lg:block"><CrownIcon /></div>
+        <div className="absolute bottom-12 -right-8 hidden lg:block"><SmileyIcon /></div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           
@@ -44,12 +40,7 @@ const CoreValuesSection = () => {
             <p className="font-semibold text-gray-500">Our Culture</p>
             <h2 className="mt-2 text-4xl sm:text-5xl font-bold text-gray-800">
               ค่านิยมหลัก
-              <span 
-                // สไตล์คล้ายกับคำว่า "CHANGES" ในตัวอย่าง
-                className="mt-2 block bg-blue-100 text-blue-700 px-2 transform -skew-x-12"
-              >
-                3S
-              </span>
+              <span className="mt-2 block bg-blue-100 text-blue-700 px-2 transform -skew-x-12">3S</span>
             </h2>
           </div>
 
@@ -58,10 +49,13 @@ const CoreValuesSection = () => {
             {coreValues.map((value) => (
               <div 
                 key={value.name}
-                className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-shadow p-6 flex items-center space-x-6"
+                // แก้ไขการจัดวางเล็กน้อยเพื่อให้ตัวอักษรที่ขนาดไม่เท่ากันยังดูสวยงาม
+                className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-shadow p-6 flex items-baseline space-x-4"
               >
                 <h3 className={`text-2xl font-bold ${value.color}`}>
-                  {value.name}
+                  {/* ทำให้ตัว S ใหญ่ขึ้น และที่เหลือขนาดปกติ */}
+                  <span className="text-4xl">{value.name.charAt(0)}</span>
+                  {value.name.slice(1)}
                 </h3>
                 <p className="text-gray-600">
                   {value.description}
