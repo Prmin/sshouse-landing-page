@@ -32,7 +32,7 @@ const Navbar = () => {
           {/* ส่วนของ Logo */}
           <Link href="/" className="flex items-center">
               <Image
-                src="/LOGO ss.svg" // **สำคัญ:** คุณต้องสร้างไฟล์ logo นี้ไว้ในโฟลเดอร์ public
+                src="/LOGO ss 1.svg" // **สำคัญ:** คุณต้องสร้างไฟล์ logo นี้ไว้ในโฟลเดอร์ public
                 alt="Logo"
                 width={110}
                 height={40}
