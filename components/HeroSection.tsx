@@ -4,9 +4,6 @@ import React from 'react';
 const HeroSection = () => {
   return (
     <section 
-      // Container หลักที่กำหนดพื้นหลังและความสูง
-      // หมายเหตุ: ผมใช้สี Gradient เป็นพื้นหลังชั่วคราว คุณสามารถเปลี่ยนเป็นรูปภาพได้ง่ายๆ
-      // โดยการเพิ่มคลาส `bg-[url('/path-to-your-image.jpg')] bg-cover bg-center`
       className="relative bg-gradient-to-br from-gray-900 via-blue-900 to-[#001E4C] text-white"
     >
       {/* Overlay สีดำโปร่งแสงเพื่อให้ตัวหนังสืออ่านง่ายขึ้นบนพื้นหลังรูปภาพ */}
@@ -18,16 +15,15 @@ const HeroSection = () => {
           className="min-h-screen flex flex-col items-center justify-center text-center py-24"
         >
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-200">
-            ซอฟต์แวร์ที่ 'เสถียร' และ 'ใช้ง่าย'
-            <span className="block mt-2 sm:mt-4">เหมือนมีเพื่อนช่วยคิด</span>
+            มุ่งพัฒนาเทคโนโลยี
+            <span className="block mt-2 sm:mt-4">ที่ใช้งานง่าย เสถียร และรวดเร็ว</span>
           </h1>
           
-          <p className="mt-6 max-w-2xl text-lg sm:text-xl text-gray-300">
-            เราสร้างสรรค์เทคโนโลยีที่เข้าใจคุณอย่างแท้จริง ลืมศัพท์เทคนิคยากๆ และความหงุดหงิดไปได้เลย 
-            เราพร้อมเป็นเพื่อนคู่คิดด้านดิจิทัลให้ธุรกิจของคุณ
+          <p className="mt-6 max-w-3xl text-lg sm:text-xl text-gray-300">
+            พร้อมสื่อสารกับผู้ใช้อย่างเป็นมิตร เหมาะกับชีวิตประจำวัน และเคารพในประสบการณ์ของทุกคน
           </p>
 
-          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+          {/* <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="#contact" // ควรลิงก์ไปยัง Section ติดต่อ
               className="px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-full text-lg font-semibold shadow-lg transform hover:scale-105 transition-all duration-300 ease-in-out"
@@ -40,7 +36,7 @@ const HeroSection = () => {
             >
               ดูผลงานของเรา
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

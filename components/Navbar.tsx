@@ -47,7 +47,7 @@ const Navbar = () => {
                 Home
               </Link>
             </li>
-            {/* เมนูแบบมี Dropdown */}
+            {/* เมนูแบบมี Dropdown
             <li className="flex items-center cursor-pointer text-blue-700 hover:text-blue-900 font-medium transition-colors">
               Solution
               <ChevronDownIcon />
@@ -55,7 +55,7 @@ const Navbar = () => {
             <li className="flex items-center cursor-pointer text-blue-700 hover:text-blue-900 font-medium transition-colors">
               Company
               <ChevronDownIcon />
-            </li>
+            </li> */}
             <li>
               <Link href="/about" className="text-blue-700 hover:text-blue-900 font-medium transition-colors">
                 About us
