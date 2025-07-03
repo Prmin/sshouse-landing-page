@@ -57,7 +57,7 @@ const Footer = () => {
               <div className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-500 md:flex md:justify-between">
                   <p>&copy; 2025 Sathian Software House. All Rights Reserved.</p>
                   <div className="flex ">
-                      <SocialIcon href="https://facebook.com">
+                      <SocialIcon href="/">
                           <FacebookIcon/>
                       </SocialIcon>
                       {/* Add more icons here */}
