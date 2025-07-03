@@ -19,13 +19,13 @@ const Footer = () => {
               <div className="grid grid-cols-1 md:flex md:justify-between gap-8">
                   {/* Column 1 */}
                   <div className="space-y-4 md:max-w-md">
-                      <Image
-                          src="/LOGO ss 1-white.svg" // **สำคัญ:** คุณต้องสร้างไฟล์ logo นี้ไว้ในโฟลเดอร์ public
+                      {/* <Image
+                          src="/" // **สำคัญ:** คุณต้องสร้างไฟล์ logo นี้ไว้ในโฟลเดอร์ public
                           alt="Logo-white"
                           width={200}
                           height={0}
                           priority // โหลด logo ก่อนเพื่อประสิทธิภาพ
-                      />
+                      /> */}
                       <p className="text-gray-400">นวัตกรรมที่สร้างรรค์ตอบสนองด้วยความเข้าใจ</p>
                   </div>
 

@@ -31,13 +31,13 @@ const Navbar = () => {
 
           {/* ส่วนของ Logo */}
           <Link href="/" className="flex items-center">
-              <Image
-                src="/LOGO ss 1.svg" // **สำคัญ:** คุณต้องสร้างไฟล์ logo นี้ไว้ในโฟลเดอร์ public
+              {/* <Image
+                src="/" // **สำคัญ:** คุณต้องสร้างไฟล์ logo นี้ไว้ในโฟลเดอร์ public
                 alt="Logo"
                 width={120}
                 height={0}
                 priority // โหลด logo ก่อนเพื่อประสิทธิภาพ
-              />
+              /> */}
           </Link>
 
           {/* ส่วนของเมนู */}
