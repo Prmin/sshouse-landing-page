@@ -23,19 +23,19 @@ const Navbar = () => {
   return (
     // Background เต็มความกว้างเพื่อโชว์เงาและทำให้ Navbar ลอยเด่น
     <div className="w-full bg-gradient-to-r from-[#001E4C] to-[#003B7D] p-4 flex justify-center">
-      <nav 
+      <nav
         // Container หลักของ Navbar
         className="w-full max-w-6xl bg-white rounded-full shadow-xl px-8 py-3"
       >
         <div className="flex items-center justify-between">
-          
+
           {/* ส่วนของ Logo */}
           <Link href="/" className="flex items-center">
               <Image
                 src="/LOGO ss 1.svg" // **สำคัญ:** คุณต้องสร้างไฟล์ logo นี้ไว้ในโฟลเดอร์ public
                 alt="Logo"
-                width={110}
-                height={40}
+                width={120}
+                height={0}
                 priority // โหลด logo ก่อนเพื่อประสิทธิภาพ
               />
           </Link>
@@ -43,7 +43,7 @@ const Navbar = () => {
           {/* ส่วนของเมนู */}
           <ul className="hidden md:flex items-center space-x-8">
             <li>
-              <Link href="/" className="text-blue-700 hover:text-blue-900 font-medium transition-colors">
+              <Link href="/" className="text-[#365785] hover:text-blue-900 font-medium transition-colors">
                 Home
               </Link>
             </li>
@@ -57,12 +57,12 @@ const Navbar = () => {
               <ChevronDownIcon />
             </li> */}
             <li>
-              <Link href="/About" className="text-blue-700 hover:text-blue-900 font-medium transition-colors">
+              <Link href="/About" className="text-[#365785] hover:text-blue-900 font-medium transition-colors">
                 About us
               </Link>
             </li>
           </ul>
-          
+
           {/* (Optional) Hamburger Menu for Mobile */}
           <div className="md:hidden">
             {/* ใส่ปุ่ม Hamburger Icon ที่นี่ */}

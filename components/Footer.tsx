@@ -13,13 +13,19 @@ const FacebookIcon = () => <svg fill="currentColor" className="w-6 h-6" viewBox=
 const Footer = () => {
 
   return (
-      <footer className="bg-gray-900 text-gray-300">
+      <footer className="bg-gradient-to-r from-[#001E4C] to-[#003B7D]">
           <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
               {/* Responsive Columns */}
               <div className="grid grid-cols-1 md:flex md:justify-between gap-8">
                   {/* Column 1 */}
                   <div className="space-y-4 md:max-w-md">
-                      <h3 className="text-xl font-bold text-white">Sathian Software House</h3>
+                      <Image
+                          src="/LOGO ss 1-white.svg" // **สำคัญ:** คุณต้องสร้างไฟล์ logo นี้ไว้ในโฟลเดอร์ public
+                          alt="Logo-white"
+                          width={200}
+                          height={0}
+                          priority // โหลด logo ก่อนเพื่อประสิทธิภาพ
+                      />
                       <p className="text-gray-400">นวัตกรรมที่สร้างรรค์ตอบสนองด้วยความเข้าใจ</p>
                   </div>
 
