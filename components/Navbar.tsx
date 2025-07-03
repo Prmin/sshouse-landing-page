@@ -57,7 +57,7 @@ const Navbar = () => {
               <ChevronDownIcon />
             </li> */}
             <li>
-              <Link href="/about" className="text-blue-700 hover:text-blue-900 font-medium transition-colors">
+              <Link href="/About" className="text-blue-700 hover:text-blue-900 font-medium transition-colors">
                 About us
               </Link>
             </li>
